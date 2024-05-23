@@ -3,27 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ophtao</title>
+    <title>Ophtao - Cabinet Médical d'Ophtalmologie</title>
     <link rel="icon" href="image.ico" type="image/x-icon">
     <link rel="shortcut icon" href="image.ico" type="image/x-icon">
-    <title>Cabinet Médical d'Ophtalmologie</title>
-    <link rel="stylesheet" href="styles.css">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ophtao - Cabinet Médical d'Ophtalmologie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
             margin: 0;
-            padding: 0;
-            line-height: 1.6;
-            background-color: #f5f5f5;
-            background-image: url('wp10578010.jpg');
-            background-size: 90%;
-            background-blend-mode: normal;
         }
         header {
             background-color: #003366;
@@ -36,44 +28,68 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
         nav ul li {
             display: inline;
-            margin-right: 20px;
+            margin-right: 15px;
         }
         nav ul li a {
             color: #ffffff;
             text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffcc00;
         }
         main {
             padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
         section {
             background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
         }
-        h2 {
+        section.doctor, section.staff {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        section.doctor:hover, section.staff:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+        h1, h2, h3, h4 {
             color: #003366;
         }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        h2 {
+            font-size: 2em;
+        }
+        h3 {
+            font-size: 1.5em;
+        }
+        h4 {
+            font-size: 1.2em;
+            margin-top: 1em;
+        }
         p {
-            line-height: 1.6;
+            line-height: 1.8;
+            margin: 10px 0;
         }
         a {
             color: #003366;
             text-decoration: none;
+            transition: color 0.3s ease;
         }
         a:hover {
+            color: #ffcc00;
             text-decoration: underline;
-        }
-        .doctor {
-            margin-bottom: 20px;
-        }
-        .doctor h3 {
-            color: #003366;
         }
         footer {
             background-color: #003366;
@@ -84,22 +100,15 @@
             bottom: 0;
             width: 100%;
         }
-        .doctor {
-            margin-bottom: 20px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 20px;
-        }
-        .doctor:last-child {
-            margin-bottom: 0;
-            border-bottom: none;
-            padding-bottom: 0;
+        .icon {
+            margin-right: 8px;
         }
     </style>
 </head>
 
 <body>
     <header>
-        <h1>Ophtao - Cabinet Médical d'Ophtalmologie</h1>
+        <h1><i class="fas fa-eye icon"></i>Ophtao - Cabinet Médical d'Ophtalmologie</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
@@ -109,7 +118,8 @@
 
     <main>
         <section id="equipe">
-            <h2>Notre Équipe</h2>
+            <h2>Nos médecins</h2>
+            
             <div class="doctor">
                 <h3>Dr. Olivier Megret</h3>
                 <p>Expertises et actes : Chirurgie de la cataracte, DMLA, Diabète, Glaucome, Injection, Lentilles de contact, OCT, Ophtalmologie médico-chirurgicale</p>
@@ -142,24 +152,37 @@
                 <h4>Prendre rendez-vous avec le Dr. Kerdali</h4>
                 <p>Pour prendre rendez-vous avec le Dr. Nawel Kerdali, veuillez cliquer sur le lien suivant :</p>
                 <a href="https://www.doctolib.fr/ophtalmologue/houilles/olivier-megret/booking/motives?specialityId=4&telehealth=false&placeId=practice-7892&bookingFunnelSource=profile" target="_blank">Prendre rendez-vous</a>
-                <p>Au sein d'Ophtao le Docteur Kerdali vous reçoit le lundi après-midi de 12h30 à 16h15. Et pratique les injections intravitrénées à <a href="https://www.doctolib.fr/ophtalmologue/houilles/olivier-megret/booking/motives?specialityId=4&telehealth=false&placeId=practice-7892&bookingFunnelSource=profile" target="_blank"> la clinique du plateau à Bezons</a>.</p>
+                <p>Au sein d'Ophtao le Docteur Kerdali vous reçoit le lundi après-midi de 12h30 à 16h15. Elle pratique les injections intravitréennes à <a href="https://www.doctolib.fr/ophtalmologue/houilles/olivier-megret/booking/motives?specialityId=4&telehealth=false&placeId=practice-7892&bookingFunnelSource=profile">la clinique du Plateau de Bezons</a> où elle opère également en chirurgie.</p>
             </div>
+        </section>
 
-            <div class="doctor">
-                <h3>Dr. Omar Ben Lassoued</h3>
-                <p>Expertises et actes : Chirurgie de la cataracte, Chirurgie de la rétine, Chirurgie des voies lacrymales, Chirurgie ophtalmologique, DMLA, Diabète, Glaucome, Injection intravitréenne, Laser ophtalmologique, OCT, Vitrectomie</p>
-                <p>L'ophtalmologue, ou ophtalmologiste, traite l'ensemble des maladies de l’œil. Il prend notamment en charge les troubles de la réfraction (presbytie, myopie, hypermétropie astigmatisme), le strabisme, les troubles de la vision des couleurs, les glaucomes ou encore les pathologies de la rétine ou de la paupière.</p>
-                <h4>Prendre rendez-vous avec le Dr. Ben Lassoued</h4>
-                <p>Pour prendre rendez-vous avec le Dr. Omar Ben Lassoued, veuillez cliquer sur le lien suivant :</p>
-                <p>Au sein d'Ophtao le Docteur Ben Lassoued vous reçoit le mardi matin de 9h00 à 12h30.</p>
-                <a href="https://www.doctolib.fr/ophtalmologue/houilles/olivier-megret/booking/motives?specialityId=4&telehealth=false&placeId=practice-7892&bookingFunnelSource=profile" target="_blank">Prendre rendez-vous</a>
+        <section id="orthoptistes" class="staff">
+            <h2>Nos orthoptistes</h2>
+            <div class="staff-member">
+                <h3>Mme. Nathalie</h3>
+                <p>Nathalie...</p>
+            </div>
+            <div class="staff-member">
+                <h3>M. Ferret</h3>
+                <p>Monsieur...</p>
+            </div>
+        </section>
+
+        <section id="secretaires" class="staff">
+            <h2>Nos secrétaires</h2>
+            <div class="staff-member">
+                <h3>Mme. Carole</h3>
+                <p>Carole...</p>
+            </div>
+            <div class="staff-member">
+                <h3>Mme. Nadej</h3>
+                <p>Nadej...</p>
             </div>
         </section>
     </main>
 
     <footer>
-        <p>&copy; 2024 Ophtao - Cabinet Médical d'Ophtalmologie</p>
+        <p>&copy; 2023 Ophtao. Tous droits réservés.</p>
     </footer>
-
 </body>
 </html>
