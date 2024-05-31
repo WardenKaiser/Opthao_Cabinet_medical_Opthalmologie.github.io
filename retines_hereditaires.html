@@ -3,26 +3,138 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ophtao - Cabinet Médical d'Ophtalmologie</title>
+    <title>Dystrophies héréditaires de la rétine</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
     <script src="script.js" defer></script>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        header {
+            background-color: #003366;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            font-size: 1.2em;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffa500;
+        }
+        main {
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        section {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: #003366;
+        }
+        p {
+            line-height: 1.6;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .booking-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .booking-link:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
+        }
+        footer {
+            background-color: #003366;
+            color: #ffffff;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+    </style>
 </head>
-
 <body>
     <header>
         <h1>Dystrophies héréditaires de la rétine</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="autres.html">Autres Pathologies</a></li>
-                <li><a href="traitement_retines_hereditaires.html">Traitements</a></li>
             </ul>
         </nav>
     </header>
 
-    <div>
-        <h2> </h2>
-        <p>Le couple photorécepteurs/cellules de l'épithélium pigmentaire est dégénéré dans les dystrophies rétiniennes héréditaires. Ce dysfonctionnement cellulaire est responsable des manifestations cliniques de l'ophtalmologie.</p>
-        <p>L'atteinte primitive se produit généralement au niveau des bâtonnets, puis elle est retardée au niveau des cônes. C'est une rod-cone dystrophie. Les symptômes cliniques sont une diminution du champ visuel périphérique nocturne (héméralopie) et, à mesure que l'atteinte progresse, une diminution de la vision centrale associée plus ou moins à un trouble de la vision des couleurs et à une photophobie.</p>
-    </div>
+    <main>
+        <section id="reasons-to-book-appointment">
+            <h2>Prise de rendez-vous</h2>
+            <p>Notre cabinet médical est là pour vous offrir des soins complets et personnalisés, quelle que soit votre raison de consulter.</p>
+            <p>Pour prendre rendez-vous, vous avez deux options :</p>
+            <ul>
+                <li>Appeler le numéro de téléphone suivant : <a href="tel:+33139139191">01 39 13 91 91</a></li>
+                <li>Ou bien, cliquer sur le lien ci-dessous pour prendre rendez-vous en ligne :</li>
+            </ul>
+            <a href="https://www.doctolib.fr/ophtalmologue/houilles/olivier-megret/booking/motives?specialityId=4&telehealth=false&placeId=practice-7892&bookingFunnelSource=profile" target="_blank" class="booking-link">Prendre rendez-vous en ligne</a>
+        </section>
+
+        <section id="description">
+            <h2>Description des dystrophies héréditaires de la rétine</h2>
+            <p>Les dystrophies héréditaires de la rétine sont des maladies génétiques qui affectent les photorécepteurs et les cellules de l'épithélium pigmentaire de la rétine. Cette altération cellulaire est responsable des manifestations cliniques observées en ophtalmologie.</p>
+            <p>L'atteinte primaire se produit généralement au niveau des bâtonnets, suivie par une altération des cônes. Cela se traduit par une dystrophie rodéo-cone. Les symptômes cliniques incluent une diminution du champ visuel périphérique nocturne (héméralopie) et, avec la progression de la maladie, une diminution de la vision centrale accompagnée éventuellement de troubles de la vision des couleurs et de photophobie.</p>
+        </section>
+
+        <section id="diagnostique">
+            <h2>Diagnostic des dystrophies héréditaires de la rétine</h2>
+            <p>Le diagnostic des dystrophies héréditaires de la rétine repose sur un examen clinique approfondi réalisé par un ophtalmologiste. Cet examen peut inclure des tests de vision, des examens du fond d'œil, ainsi que des tests génétiques pour confirmer le diagnostic et identifier le type de dystrophie.</p>
+        </section>
+
+        <section id="traitements">
+            <h2>Traitements des dystrophies héréditaires de la rétine</h2>
+            <p>Actuellement, il n'existe pas de traitement curatif pour les dystrophies héréditaires de la rétine. Cependant, des approches thérapeutiques peuvent aider à ralentir la progression de la maladie et à atténuer ses symptômes. Ces approches peuvent inclure la prise de suppléments vitaminiques, la thérapie génique ou d'autres interventions visant à protéger les cellules rétiniennes restantes.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ophtao - Cabinet Médical d'Ophtalmologie</p>
+    </footer>
 </body>
+</html>

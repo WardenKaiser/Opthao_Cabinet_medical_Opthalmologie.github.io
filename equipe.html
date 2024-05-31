@@ -6,17 +6,8 @@
     <title>Ophtao - Cabinet Médical d'Ophtalmologie</title>
     <link rel="icon" href="image.ico" type="image/x-icon">
     <link rel="shortcut icon" href="image.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
-    <script src="script.js" defer></script>
     <style>
-        body {
-            font-family: 'Roboto', sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 0;
-        }
         header {
             background-color: #003366;
             color: #ffffff;
@@ -28,68 +19,25 @@
             margin: 0;
             padding: 0;
             text-align: center;
-            font-size: 1.2em;
+            font-size: 1.5em;
         }
         nav ul li {
             display: inline;
-            margin-right: 15px;
+            margin-right: 20px;
         }
         nav ul li a {
             color: #ffffff;
             text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        nav ul li a:hover {
-            color: #ffcc00;
         }
         main {
             padding: 20px;
-            max-width: 1200px;
-            margin: 0 auto;
         }
-        section {
+        #equipe, #orthoptistes, #secretaires {
             background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
-        }
-        section.doctor, section.staff {
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        section.doctor:hover, section.staff:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-        h1, h2, h3, h4 {
-            color: #003366;
-        }
-        h1 {
-            font-size: 2.5em;
-            margin: 0;
-        }
-        h2 {
-            font-size: 2em;
-        }
-        h3 {
-            font-size: 1.5em;
-        }
-        h4 {
-            font-size: 1.2em;
-            margin-top: 1em;
-        }
-        p {
-            line-height: 1.8;
-            margin: 10px 0;
-        }
-        a {
-            color: #003366;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        a:hover {
-            color: #ffcc00;
-            text-decoration: underline;
         }
         footer {
             background-color: #003366;
@@ -100,26 +48,54 @@
             bottom: 0;
             width: 100%;
         }
-        .icon {
-            margin-right: 8px;
+        .doctor, .staff-member {
+            background-color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 20px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .doctor:hover, .staff-member:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+        }
+        .doctor h3, .staff-member h3 {
+            color: #003366;
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+        .doctor p, .staff-member p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
+        .doctor a, .staff-member a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .doctor a:hover, .staff-member a:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
         }
     </style>
 </head>
-
 <body>
     <header>
-        <h1><i class="fas fa-eye icon"></i>Ophtao - Cabinet Médical d'Ophtalmologie</h1>
+        <h1> L'équipe médicale</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
             </ul>
         </nav>
     </header>
-
     <main>
         <section id="equipe">
             <h2>Nos médecins</h2>
-            
             <div class="doctor">
                 <h3>Dr. Olivier Megret</h3>
                 <p>Expertises et actes : Chirurgie de la cataracte, DMLA, Diabète, Glaucome, Injection, Lentilles de contact, OCT, Ophtalmologie médico-chirurgicale</p>
@@ -129,12 +105,10 @@
                 <p>Les examens effectués permettront de poser les indications thérapeutiques. Le docteur Mégret opère à la Clinique du plateau à Bezons.</p>
                 <p>Par ailleurs le docteur Mégret reçoit les jeunes enfants (de moins de 5 ans).</p>
                 <p>Les orthoptistes du cabinet sont compétents pour le renouvellement des lunettes sous certaines conditions. Le docteur Mégret prendra connaissance de votre dossier et validera ensuite vos ordonnances ou recommandations afférentes. Visite de 28 € (motif consultation : RNO).</p>
-
                 <h4>Prendre rendez-vous avec le Dr. Megret</h4>
                 <p>Pour prendre rendez-vous avec le Dr. Olivier Megret, veuillez cliquer sur le lien suivant :</p>
                 <a href="https://www.doctolib.fr/ophtalmologue/houilles/olivier-megret/booking/motives?specialityId=4&telehealth=false&placeId=practice-7892&bookingFunnelSource=profile" target="_blank">Prendre rendez-vous</a>
             </div>
-
             <div class="doctor">
                 <h3>Dr. Jean-Charles Hoegy</h3>
                 <p>Expertises et actes : Bilan de la vue, Cataracte, Chalazion, Chirurgie ophtalmologique, Conjonctivite, DMLA, Daltonisme, Glaucome, Lentilles de contact, OCT, Orgelet, Sécheresse oculaire</p>
@@ -144,7 +118,6 @@
                 <p>Au sein d'Ophtao le Docteur Hoegy vous reçoit le lundi matin de 9h30 à 12h30.</p>
                 <a href="https://www.doctolib.fr/ophtalmologue/houilles/olivier-megret/booking/motives?specialityId=4&telehealth=false&placeId=practice-7892&bookingFunnelSource=profile" target="_blank">Prendre rendez-vous</a>
             </div>
-
             <div class="doctor">
                 <h3>Dr. Nawel Kerdali</h3>
                 <p>Expertises et actes : Glaucome, DMLA, Diabète, Pathologies rétiniennes, Lentilles de contact</p>
@@ -155,7 +128,6 @@
                 <p>Au sein d'Ophtao le Docteur Kerdali vous reçoit le lundi après-midi de 12h30 à 16h15. Elle pratique les injections intravitréennes à <a href="https://www.doctolib.fr/ophtalmologue/houilles/olivier-megret/booking/motives?specialityId=4&telehealth=false&placeId=practice-7892&bookingFunnelSource=profile">la clinique du Plateau de Bezons</a> où elle opère également en chirurgie.</p>
             </div>
         </section>
-
         <section id="orthoptistes" class="staff">
             <h2>Nos orthoptistes</h2>
             <div class="staff-member">
@@ -167,7 +139,6 @@
                 <p>Monsieur...</p>
             </div>
         </section>
-
         <section id="secretaires" class="staff">
             <h2>Nos secrétaires</h2>
             <div class="staff-member">
@@ -180,9 +151,8 @@
             </div>
         </section>
     </main>
-
     <footer>
-        <p>&copy; 2023 Ophtao. Tous droits réservés.</p>
+        <p>&copy; 2024 Ophtao - Cabinet Médical d'Ophtalmologie</p>
     </footer>
 </body>
 </html>

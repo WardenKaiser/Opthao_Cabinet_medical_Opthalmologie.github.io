@@ -3,22 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ophtao - Cabinet Médical d'Ophtalmologie</title>
+    <title>Prise de rendez-vous</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <script src="script.js" defer></script>
     <style>
-
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8;
+            color: #333;
+        }
         header {
             background-color: #003366;
             color: #ffffff;
             padding: 20px;
             text-align: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         nav ul {
             list-style-type: none;
             margin: 0;
             padding: 0;
             text-align: center;
-            font-size: 1.5em;
+            font-size: 1.2em;
         }
         nav ul li {
             display: inline;
@@ -27,16 +36,51 @@
         nav ul li a {
             color: #ffffff;
             text-decoration: none;
+            transition: color 0.3s ease;
+        }
+        nav ul li a:hover {
+            color: #ffa500;
         }
         main {
             padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
         }
-        #welcome {
+        section {
             background-color: #ffffff;
             padding: 20px;
             border-radius: 10px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
             margin-bottom: 20px;
+            transition: transform 0.3s ease;
+        }
+        section:hover {
+            transform: translateY(-5px);
+        }
+        h2 {
+            color: #003366;
+        }
+        p {
+            line-height: 1.6;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        ul li {
+            margin-bottom: 10px;
+        }
+        .booking-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+        .booking-link:hover {
+            background-color: #45a049;
+            transform: translateY(-2px);
         }
         footer {
             background-color: #003366;
@@ -46,21 +90,56 @@
             position: fixed;
             bottom: 0;
             width: 100%;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
         }
     </style>
 </head>
-
-
-
 <body>
     <header>
-        <h1>Pathologies</h1>
+        <h1>Différentes pathologies</h1>
         <nav>
             <ul>
                 <li><a href="index.html">Accueil</a></li>
-                <li><a href="pathologies_oculaires_generales.html">Pathologies Oculaires Générales</a></li>
-                <li><a href="pathologies_soins_pediatrie.html">Pathologies et Soins en Pédiatrie</a></li>
-                <li><a href="pathologies_paupieres.html">Pathologies des Paupières</a></li>
             </ul>
         </nav>
     </header>
+
+    <main>
+        <section id="pathologies-oculaires-generales">
+            <h2>Pathologies Oculaires Générales</h2>
+            <ul>
+                <li><a href="glaucome.html">Glaucome</a> Les glaucomes sont des maladies de l'œil qui peuvent amener à la cécité en l'absence de traitement.</li>
+                <li><a href="dmla.html">DMLA</a> La Dégénérescence Maculaire Liée à l'Age (DMLA) est une maladie dégénérative de la macula qui survient chez les personnes âgées et aboutit à une perte de la vision centrale.</li>
+                <li><a href="diabete.html">La Rétinopathie Diabétique</a> Le diabète est une maladie générale caractérisée par l'augmentation du taux de glycémie dans le sang. Il s'accompagne d'une anomalie des petits vaisseaux sanguins qui entraînent des complications multiples, notamment au niveau du rein du cœur et de l'oeil.</li>
+                <li><a href="cataracte.html">Cataracte</a> La cataracte est l'opacification du cristallin. Elle survient généralement chez les personnes âgées, de façon progressive: la vision devient de plus en plus floue.</li>
+                <li><a href="uveite.html">Uvéite</a> L'uvéite est une maladie oculaire assez rare qui se produit lorsque la couche médiane de l'œil (uvée ou tractus uvéal) est enflammée et se manifeste par une rougeur, une douleur oculaire, une augmentation des flotteurs ou une altération de la vision.</li>
+                <li><a href="conjonctivite.html">Conjonctivite</a> Membrane translucide qui recouvre d'une part la partie antérieure de l'œil à partir du limbe et en avant de la sclère, d'autre part la face postérieure des paupières.</li>
+                <li><a href="retines_hereditaires.html">Dystrophies héréditaires de la rétine</a> Le couple photorécepteurs/cellules de l'épithélium pigmentaire est dégénéré dans les dystrophies rétiniennes héréditaires.</li>
+            </ul>
+        </section>
+
+        <section id="pathologies-soins-pediatrie">
+            <h2>Pathologies et Soins en Pédiatrie</h2>
+            <ul>
+                <li><a href="suivi_amblyopie.html">Amblyopie</a> Dans deux cas sur trois, un strabisme s'accompagne d'une baisse de la vision de l'oeil dévié (amblyopie) qui est parfois très importante.</li>
+                <li><a href="suivi_strabisme.html">Strabisme</a> Le strabisme est caractérisé par une déviation des axes visuels (loucherie).</li>
+                <li><a href="pediatrie.html">Pédiatrie</a> L'œil est un organe précieux et particulièrement fragile chez les enfants. Il est indispensable de le protéger partout, toute l'année et dès son plus jeune âge.</li>
+                <li><a href="larmoiment.html">Larmoiment</a> L'armoiement unilatéral du nourrisson est souvent dû à une imperforation des voies lacrymales. Dans certains cas, ce problème peut se résoudre spontanément. Si ce n'est pas le cas, une manœuvre spécifique ou une petite intervention chirurgicale peut être nécessaire.</li>
+            </ul>
+        </section>
+
+        <section id="pathologies-paupieres">
+            <h2>Pathologies des Paupières</h2>
+            <ul>
+                <li><a href="orgelet.html">Orgelet</a> L'orgelet est une infection bactérienne bénigne à la racine d'un cil qui est détectée par un médecin traitant ou un ophtalmologue au cours d'un examen clinique.</li>
+                <li><a href="chalazion.html">Chalazion</a> Un chalazion est une tache rougeâtre dans la paupière.</li>
+                <li><a href="blepharite.html">Blépharite</a> La blépharite est une affection gênante et inesthétique, mais en général, elle n'entraîne pas de lésions de la cornée, ni de perte de la vision</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ophtao - Cabinet Médical d'Ophtalmologie</p>
+    </footer>
+</body>
+</html>
